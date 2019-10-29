@@ -1,1 +1,1 @@
-# vendinMachine
+# Vending Machine
