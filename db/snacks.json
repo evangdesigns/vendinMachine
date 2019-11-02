@@ -1,0 +1,42 @@
+{
+  "snack1": {
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71A-88AFOhL._SL1500_.jpg",
+    "name": "Reese's",
+    "price": 100,
+    "currentStocked": 12,
+    "lifetimeNum": 43,
+    "uid": "jiWePFKzTHWpLJeIkIjsFspFz3t1"
+  },
+  "snack2": {
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71ZRjwF%2Br3L._SL1500_.jpg",
+    "name": "Hershey's",
+    "price": 100,
+    "currentStocked": 10,
+    "lifetimeNum": 100,
+    "uid": "jiWePFKzTHWpLJeIkIjsFspFz3t1"
+  },
+  "snack3": {
+    "imageUrl": "https://media4.s-nbcnews.com/j/newscms/2018_04/1313194/skittles_flavors_180125_inline_39bdad2af4c490126f11c4a4ea1de688.fit-560w.jpg",
+    "name": "Skittles",
+    "price": 100,
+    "currentStocked": 15,
+    "lifetimeNum": 45,
+    "uid": "jiWePFKzTHWpLJeIkIjsFspFz3t1"
+  },
+  "snack4": {
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/714gQ91rvyL._SL1500_.jpg",
+    "name": "Milky-Way",
+    "price": 100,
+    "currentStocked": 20,
+    "lifetimeNum": 20,
+    "uid": "jiWePFKzTHWpLJeIkIjsFspFz3t1"
+  },
+  "snack5": {
+    "imageUrl": "https://i5.walmartimages.com/asr/d88e276f-72e6-49a3-b0ed-3504051a7de1_1.8040a12e97e51ef511d0dcd22838db1e.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
+    "name": "M&M's",
+    "price": 100,
+    "currentStocked": 16,
+    "lifetimeNum": 9000,
+    "uid": "12345"
+  }
+}
