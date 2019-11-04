@@ -20,7 +20,7 @@ const getCompleteMachine = () => new Promise((resolve, reject) => {
               const newP = { ...position };
               const getSnackPosition = snackPositions.find((x) => x.positionId === newP.id);
               if (getSnackPosition) {
-                const snack = snacks.find((x) => x.id === getSnackPosition.snacksId);
+                const snack = snacks.find((x) => x.id === getSnackPosition.snackId);
                 newP.snack = snack;
               } else {
                 newP.snack = {};
