@@ -2,6 +2,8 @@ import $ from 'jquery';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 
+import stocker from '../../components/Stocker/stocker';
+
 const authDiv = $('#auth');
 const stockDiv = $('#stock');
 const logoutNavBar = $('#logOut');
@@ -12,6 +14,7 @@ const checkLoginStaus = () => {
       stockDiv.removeClass('hide');
       logoutNavBar.removeClass('hide');
       authDiv.addClass('hide');
+      stocker.buildTheStocker(user.uid);
     } else {
       stockDiv.addClass('hide');
       logoutNavBar.addClass('hide');

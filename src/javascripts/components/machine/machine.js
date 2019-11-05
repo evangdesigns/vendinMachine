@@ -14,12 +14,12 @@ const buildTheMachine = () => {
       // snacks component should return a bootstrap card - done
       // printToDom('stock', domString) - done
       let domString = '<h2>VENDING MACHINE</h2>';
-      domString += '<div id="snack-section" class="d-flex flex-wrap">';
+      domString += '<div id="snack-section" class="d-flex flex-wrap justify-content-center">';
       positions.forEach((position) => {
         domString += snack.snackCard(position);
       });
       domString += '</div>';
-      utilities.printToDom('stock', domString);
+      utilities.printToDom('machine', domString);
     })
     .catch((error) => console.error(error));
 };
