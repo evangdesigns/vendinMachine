@@ -1,19 +1,22 @@
-import machineData from '../../helpers/data/smash';
-import './machine.scss';
-import snacks from '../snacks/snacks';
+import smash from '../../helpers/data/smash';
 import utilities from '../../helpers/utilities';
 
+import snack from '../snacks/snacks';
+import './machine.scss';
+
 const buildTheMachine = () => {
-  machineData.getCompleteMachine()
+  smash.getCompleteMachine()
     .then((positions) => {
-    // build a dom string
-    // div with an id = snack-section, class=d-flex flex-wrap
-    // forEach over positions - call a component called snacks
-    // snacks component should return a bootstrap card
-      let domString = '<h2 class="text-center>VENDING MACHINE</h2>';
+      // build a dom string - done
+      // h2 that says VENDING MACHINE - done
+      // div with an id = snack-section, class=d-flex flex-wrap - done
+      // forEach over positions - call a component called snacks - done
+      // snacks component should return a bootstrap card - done
+      // printToDom('stock', domString) - done
+      let domString = '<h2>VENDING MACHINE</h2>';
       domString += '<div id="snack-section" class="d-flex flex-wrap">';
       positions.forEach((position) => {
-        domString += snacks.snackCard(position);
+        domString += snack.snackCard(position);
       });
       domString += '</div>';
       utilities.printToDom('stock', domString);
