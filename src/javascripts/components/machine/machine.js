@@ -1,6 +1,5 @@
 import smash from '../../helpers/data/smash';
 import utilities from '../../helpers/utilities';
-
 import snack from '../snacks/snacks';
 import './machine.scss';
 
