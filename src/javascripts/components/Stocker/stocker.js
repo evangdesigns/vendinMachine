@@ -65,6 +65,19 @@ const addNewSnack = (e) => {
     .catch((error) => console.error(error));
 };
 
+const quickStock = (e) => {
+  e.stopImmediatePropagation();
+  const { uid } = firebase.auth().currentUser;
+  const snackId = e.target.id.split('snack-')[1];
+  snackData.restock(snackId, 5)
+    .then(() => {
+      // eslint-disable-next-line no-use-before-define
+      buildTheStocker(uid);
+      machine.buildTheMachine();
+    })
+    .catch((error) => console.error(error));
+};
+
 const buildTheStocker = (uid) => {
   smash.getSnacksWithPositions(uid)
     .then((snacks) => {
@@ -80,6 +93,7 @@ const buildTheStocker = (uid) => {
       utilities.printToDom('stock', domString);
       $('#stock').on('click', '.delete-snack-position', deleteFromMachine);
       $('#stock').on('click', '.add-snack-position', addToMachine);
+      $('#stock').on('click', '.quick-stock', quickStock);
       $('#add-new-snack').click(addNewSnack);
     })
     .catch((error) => console.error(error));

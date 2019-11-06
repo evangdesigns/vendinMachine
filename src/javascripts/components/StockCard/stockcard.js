@@ -4,6 +4,7 @@ const makeASnack = (snack) => {
       <div class="card-body">
         <h5 class="card-title">${snack.name}</h5>
         <p class="card-text">$${snack.price / 100}</p>
+        <button class="btn btn-success quick-stock" id="snack-${snack.id}">STOCK 5</button>
       </div>
       <div class="card-footer">`;
   if (snack.snackPositionId !== '') {
